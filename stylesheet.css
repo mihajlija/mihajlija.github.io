@@ -1,0 +1,26 @@
+.content--blended {
+    isolation: isolate;
+}
+
+
+/* Individual paragraph colors and blend modes */
+
+#trigger-1, #trigger-2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.pop-up-img {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+span:hover img {
+    visibility: visible;
+    opacity: 1;
+}
